@@ -1,6 +1,159 @@
 # Blender 4.4.3 MTL File: 'Gallery.blend'
 # www.blender.org
 
+newmtl Batidora_Cuerpo
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Batidora_Cuerpo.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Batidora_Cuerpo.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal.001
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal.002
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal.003
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal.004
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Cristal.005
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Frigo
+Ns 801.335083
+Ka 0.912951 0.912951 0.912951
+Kd 0.790188 0.790188 0.790188
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Bump -bm 1.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
+
+newmtl Frigo.001
+Ns 801.335083
+Ka 0.912951 0.912951 0.912951
+Kd 0.790188 0.790188 0.790188
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Bump -bm 1.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
+
+newmtl Frigo.002
+Ns 801.335083
+Ka 0.912951 0.912951 0.912951
+Kd 0.790188 0.790188 0.790188
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Bump -bm 1.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
+
+newmtl Inox
+Ns 884.875061
+Ka 0.737288 0.737288 0.737288
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Inox.001
+Ns 884.875061
+Ka 0.737288 0.737288 0.737288
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Inox.002
+Ns 884.875061
+Ka 0.737288 0.737288 0.737288
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
 newmtl Madera
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
@@ -21,6 +174,156 @@ d 1.000000
 illum 2
 map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/MaderaPiso.png
 
+newmtl Marca
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+
+newmtl Marca.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+
+newmtl Marca.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Marca.png
+
+newmtl Mat_1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.004530 0.004530 0.004530
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_1.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.004530 0.004530 0.004530
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_1.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.004530 0.004530 0.004530
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_2.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_2.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_3.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_3.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Mat_5
+Ns 776.788391
+Ka 0.305085 0.305085 0.305085
+Kd 0.377319 0.001212 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Mat_5.001
+Ns 776.788391
+Ka 0.305085 0.305085 0.305085
+Kd 0.377319 0.001212 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Mat_5.002
+Ns 776.788391
+Ka 0.305085 0.305085 0.305085
+Kd 0.377319 0.001212 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
 newmtl Material
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
@@ -40,6 +343,99 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+
+newmtl Negro.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.003872 0.003872 0.003872
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Negro.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.003872 0.003872 0.003872
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Negro.003
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.003872 0.003872 0.003872
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Panel
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+
+newmtl Panel.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+
+newmtl Panel.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+map_d C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Cafetera.fbm/Tex.Panel.png
+
+newmtl Perfil_Negro
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 10.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
+
+newmtl Perfil_Negro.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 10.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
+
+newmtl Perfil_Negro.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 10.000000 C:/Users/carre/OneDrive/Escritorio/Modelos ProyCG/Mostrador.fbm/metal_4K_Normal.jpg
 
 newmtl Piedra
 Ns 250.000000
@@ -80,3 +476,83 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+
+newmtl leaves_texture
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.004
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.005
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl leaves_texture.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+map_d C:/Users/carre/OneDrive/Escritorio/Planta1.fbm/leaves_basecolor.png
+
+newmtl pot_texture
+Ns 1000.000000
+Ka 0.086614 0.086614 0.086614
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
