@@ -1,0 +1,25 @@
+# potted plant — limpio y compatible con loaders comunes
+
+newmtl leaves_texture
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd plant_textures/leaves_basecolor.png
+# opcionales si tu shader los usa:
+# map_Bump plant_textures/leaves_normal.png
+# refl     plant_textures/leaves_metallic.png
+# map_Ns   plant_textures/leaves_roughness.png
+
+newmtl pot_texture
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 2
+map_Kd plant_textures/pot_basecolor.png
+# opcionales:
+# map_Bump plant_textures/pot_normal.png
+# refl     plant_textures/pot_metallic.png
+# map_Ns   plant_textures/pot_roughness.png
