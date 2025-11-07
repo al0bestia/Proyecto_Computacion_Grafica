@@ -48,7 +48,7 @@ const unsigned int SCR_WIDTH = 1024;
 const unsigned int SCR_HEIGHT = 768;
 
 // Definición de cámara (posición inicial en XYZ)
-Camera camera(glm::vec3(0.0f, 2.0f, 10.0f));
+Camera camera(glm::vec3(0.0f, 1.72f, 30.0f));
 
 // Controladores para el movimiento del mouse
 float lastX = SCR_WIDTH / 2.0f;
