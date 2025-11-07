@@ -1,6 +1,6 @@
 /*
 *
-* Proyecto Base Galería Estática (Basado en 09-Animation)
+* Proyecto Base Galería Estática
 *
 */
 
@@ -25,6 +25,7 @@
 #include <shader_m.h>
 #include <camera.h>
 #include <model.h>
+#include <animatedmodel.h>
 #include <material.h>
 #include <light.h>
 #include <cubemap.h>
@@ -34,13 +35,13 @@ bool Start();
 bool Update();
 
 // Definición de callbacks
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void mouse_callback(GLFWwindow* window, double xpos, double ypos);
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
-void processInput(GLFWwindow* window);
+void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+void mouse_callback(GLFWwindow *window, double xpos, double ypos);
+void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
+void processInput(GLFWwindow *window);
 
 // Globales
-GLFWwindow* window;
+GLFWwindow *window;
 
 // Tamaño de la ventana
 const unsigned int SCR_WIDTH = 1024;
@@ -59,14 +60,14 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
 // Shaders
-Shader* staticLightShader; // Renombrado de mLightsShader para más claridad
-Shader* cubemapShader;
+Shader *staticLightShader; // Renombrado de mLightsShader para más claridad
+Shader *cubemapShader;
 
 // Modelos
-Model* gallery; // Tu modelo de galería estática
+Model *gallery; // Tu modelo de galería estática
 
 // Cubemap (fondo)
-CubeMap* mainCubeMap;
+CubeMap *mainCubeMap;
 
 // Luces
 std::vector<Light> gLights;
@@ -75,25 +76,25 @@ std::vector<Light> gLights;
 Material material01;
 
 // --- Funciones de ayuda para luces (Copiadas de tu práctica) ---
-void SetLightUniformInt(Shader* shader, const char* propertyName, size_t lightIndex, int value) {
+void SetLightUniformInt(Shader *shader, const char* propertyName, size_t lightIndex, int value) {
 	std::ostringstream ss;
 	ss << "allLights[" << lightIndex << "]." << propertyName;
 	std::string uniformName = ss.str();
 	shader->setInt(uniformName.c_str(), value);
 }
-void SetLightUniformFloat(Shader* shader, const char* propertyName, size_t lightIndex, float value) {
+void SetLightUniformFloat(Shader *shader, const char* propertyName, size_t lightIndex, float value) {
 	std::ostringstream ss;
 	ss << "allLights[" << lightIndex << "]." << propertyName;
 	std::string uniformName = ss.str();
 	shader->setFloat(uniformName.c_str(), value);
 }
-void SetLightUniformVec4(Shader* shader, const char* propertyName, size_t lightIndex, glm::vec4 value) {
+void SetLightUniformVec4(Shader *shader, const char* propertyName, size_t lightIndex, glm::vec4 value) {
 	std::ostringstream ss;
 	ss << "allLights[" << lightIndex << "]." << propertyName;
 	std::string uniformName = ss.str();
 	shader->setVec4(uniformName.c_str(), value);
 }
-void SetLightUniformVec3(Shader* shader, const char* propertyName, size_t lightIndex, glm::vec3 value) {
+void SetLightUniformVec3(Shader *shader, const char* propertyName, size_t lightIndex, glm::vec3 value) {
 	std::ostringstream ss;
 	ss << "allLights[" << lightIndex << "]." << propertyName;
 	std::string uniformName = ss.str();
@@ -127,7 +128,7 @@ bool Start() {
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	// Creación de la ventana
-	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Proyecto Galeria", NULL, NULL);
+	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Proyecto InvernArte", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -151,9 +152,7 @@ bool Start() {
 
 	// Activación de buffer de profundidad
 	glEnable(GL_DEPTH_TEST);
-	// Activar transparencias
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
 
 	// Compilación de shaders (¡Necesitaré estos archivos!)
 	staticLightShader = new Shader("shaders/11_PhongShaderMultLights.vs", "shaders/11_PhongShaderMultLights.fs");
@@ -161,7 +160,7 @@ bool Start() {
 
 	// Carga del modelo de la galería
 	// Asegúrate que la ruta sea correcta dentro de tu carpeta 'bin'
-	gallery = new Model("modelos/galeria.fbx"); // <-- CAMBIA "galeria.fbx" POR EL NOMBRE DE TU ARCHIVO
+	gallery = new Model("models/Galeria.fbx"); // <-- CAMBIA "galeria.fbx" POR EL NOMBRE DE TU ARCHIVO
 
 	// Carga del Cubemap (fondo)
 	vector<std::string> faces
@@ -178,16 +177,17 @@ bool Start() {
 	mainCubeMap->loadCubemap(faces);
 
 	// Configuración de luces (puedes ajustar esto como necesites)
+	
 	Light light01;
 	light01.Position = glm::vec3(5.0f, 2.0f, 5.0f);
 	light01.Color = glm::vec4(0.3f, 0.3f, 0.3f, 1.0f);
 	gLights.push_back(light01);
-
+	
 	Light light02;
 	light02.Position = glm::vec3(-5.0f, 2.0f, 5.0f);
 	light02.Color = glm::vec4(0.3f, 0.3f, 0.3f, 1.0f);
 	gLights.push_back(light02);
-
+	
 	// Configuración de material (puedes ignorar esto si tu modelo .fbx ya trae materiales)
 	material01.ambient = glm::vec4(0.1f, 0.1f, 0.1f, 1.0f);
 	material01.diffuse = glm::vec4(0.8f, 0.8f, 0.8f, 1.0f);
@@ -224,16 +224,20 @@ bool Update() {
 	{
 		staticLightShader->use();
 
+		// Activar transparencias
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
 		staticLightShader->setMat4("projection", projection);
 		staticLightShader->setMat4("view", view);
 
 		// Transformaciones del modelo (Galería)
 		glm::mat4 model = glm::mat4(1.0f);
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // Posición en el mundo
-		model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.0f, 1.0f, 0.0f)); // Rotación
+		model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f)); // Rotación
 		model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// Escala
 		staticLightShader->setMat4("model", model);
-
+		/*
 		// Configuración de luces
 		staticLightShader->setInt("numLights", (int)gLights.size());
 		for (size_t i = 0; i < gLights.size(); ++i) {
@@ -241,14 +245,25 @@ bool Update() {
 			SetLightUniformVec4(staticLightShader, "Color", i, gLights[i].Color);
 			// ... (puedes añadir más propiedades de luz si tu shader las usa)
 		}
+		*/
+		// Configuración de luces
+		staticLightShader->setInt("numLights", (int)gLights.size());
+		for (size_t i = 0; i < gLights.size(); ++i) {
+			SetLightUniformVec3(staticLightShader, "Position", i, gLights[i].Position);
+			SetLightUniformVec3(staticLightShader, "Direction", i, gLights[i].Direction);
+			SetLightUniformVec4(staticLightShader, "Color", i, gLights[i].Color);
+			SetLightUniformVec4(staticLightShader, "Power", i, gLights[i].Power);
+			SetLightUniformInt(staticLightShader, "alphaIndex", i, gLights[i].alphaIndex);
+			SetLightUniformFloat(staticLightShader, "distance", i, gLights[i].distance);
+		}
 
 		staticLightShader->setVec3("eye", camera.Position);
 
 		// Aplicamos propiedades materiales (Opcional, si el modelo no las tiene)
-		// staticLightShader->setVec4("MaterialAmbientColor", material01.ambient);
-		// staticLightShader->setVec4("MaterialDiffuseColor", material01.diffuse);
-		// staticLightShader->setVec4("MaterialSpecularColor", material01.specular);
-		// staticLightShader->setFloat("transparency", material01.transparency);
+		staticLightShader->setVec4("MaterialAmbientColor", material01.ambient);
+		staticLightShader->setVec4("MaterialDiffuseColor", material01.diffuse);
+		staticLightShader->setVec4("MaterialSpecularColor", material01.specular);
+		staticLightShader->setFloat("transparency", material01.transparency);
 
 		gallery->Draw(*staticLightShader); //¡Dibujamos la galería!
 	}

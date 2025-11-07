@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Proyecto_Invernarte.cpp">
+    <ClCompile Include="..\Proyecto_Invernarte.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="stb_image.cpp">
+    <ClCompile Include="..\stb_image.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
